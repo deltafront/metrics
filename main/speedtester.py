@@ -59,8 +59,8 @@ def email_results(filename):
         data_string += "%s\n" % line
     f.close()
     print("Emailing results.")
-    payload = {'value1' : 'Daily Speedtest Results', 'value2' : data_string}
-    print(do_email(iftt_metrics_key,"metrics", payload))
+    payload = {'value1': 'Daily Speedtest Results', 'value2': data_string, 'value3': ''}
+    print(do_email(iftt_metrics_key, "metrics", payload))
 
 
 if __name__ == "__main__":
